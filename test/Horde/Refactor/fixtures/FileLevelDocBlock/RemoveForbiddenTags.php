@@ -18,7 +18,7 @@
  * @category  Horde
  * @license   http://www.horde.org/licenses/lgpl21 LGPL-2.1
  * @copyright 2017 Horde LLC
- * @link      http://pear.horde.org/foobar
+ * @link      https://pear.horde.org/foobar
  * @link      http://www.horde.org/
  * @package   Auth
  */
