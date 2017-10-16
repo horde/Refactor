@@ -10,7 +10,7 @@
   <email>jan@horde.org</email>
   <active>yes</active>
  </lead>
- <date>2017-05-05</date>
+ <date>2017-10-17</date>
  <version>
   <release>1.0.0alpha1</release>
   <api>1.0.0alpha1</api>
@@ -110,14 +110,16 @@
           <file name="DocBlockTest.php" role="php" />
          </dir> <!-- /bundle/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection -->
         </dir> <!-- /bundle/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor -->
-        </dir> <!-- /bundle/vendor/phpdocumentor/reflection-docblock/tests -->
+       </dir> <!-- /bundle/vendor/phpdocumentor/reflection-docblock/tests -->
        <file name=".gitignore" role="php" />
        <file name=".travis.yml" role="php" />
+       <file name="composer.json" role="php" />
+       <file name="composer.lock" role="php" />
        <file name="LICENSE" role="php" />
        <file name="phpunit.xml.dist" role="php" />
        <file name="README.md" role="php" />
       </dir> <!-- /bundle/vendor/phpdocumentor/reflection-docblock -->
-      </dir> <!-- /bundle/vendor/phpdocumentor -->
+     </dir> <!-- /bundle/vendor/phpdocumentor -->
      <file name="autoload.php" role="php" />
     </dir> <!-- /bundle/vendor -->
    </dir> <!-- /bundle -->
@@ -160,6 +162,7 @@
    <dir name="locale">
     <dir name="de">
      <dir name="LC_MESSAGES">
+      <file name="Horde_Refactor.mo" role="data" />
       <file name="Horde_Refactor.po" role="data" />
      </dir> <!-- /locale/de/LC_MESSAGES -->
     </dir> <!-- /locale/de -->
@@ -277,6 +280,8 @@
    <install as="Horde/Refactor/vendor/composer/LICENSE" name="bundle/vendor/composer/LICENSE" />
    <install as="Horde/Refactor/vendor/phpdocumentor/reflection-docblock/.gitignore" name="bundle/vendor/phpdocumentor/reflection-docblock/.gitignore" />
    <install as="Horde/Refactor/vendor/phpdocumentor/reflection-docblock/.travis.yml" name="bundle/vendor/phpdocumentor/reflection-docblock/.travis.yml" />
+   <install as="Horde/Refactor/vendor/phpdocumentor/reflection-docblock/composer.json" name="bundle/vendor/phpdocumentor/reflection-docblock/composer.json" />
+   <install as="Horde/Refactor/vendor/phpdocumentor/reflection-docblock/composer.lock" name="bundle/vendor/phpdocumentor/reflection-docblock/composer.lock" />
    <install as="Horde/Refactor/vendor/phpdocumentor/reflection-docblock/LICENSE" name="bundle/vendor/phpdocumentor/reflection-docblock/LICENSE" />
    <install as="Horde/Refactor/vendor/phpdocumentor/reflection-docblock/phpunit.xml.dist" name="bundle/vendor/phpdocumentor/reflection-docblock/phpunit.xml.dist" />
    <install as="Horde/Refactor/vendor/phpdocumentor/reflection-docblock/README.md" name="bundle/vendor/phpdocumentor/reflection-docblock/README.md" />
@@ -305,9 +310,7 @@
    <install as="Horde/Refactor/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/VarTag.php" name="bundle/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/VarTag.php" />
    <install as="Horde/Refactor/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/VersionTag.php" name="bundle/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Tag/VersionTag.php" />
    <install as="Horde/Refactor/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Type/Collection.php" name="bundle/vendor/phpdocumentor/reflection-docblock/src/phpDocumentor/Reflection/DocBlock/Type/Collection.php" />
-   <install as="Horde/Refactor/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlockTest.php" name="bundle/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlockTest.php" />
    <install as="Horde/Refactor/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlock/DescriptionTest.php" name="bundle/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlock/DescriptionTest.php" />
-   <install as="Horde/Refactor/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlock/TagTest.php" name="bundle/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlock/TagTest.php" />
    <install as="Horde/Refactor/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlock/Tag/CoversTagTest.php" name="bundle/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlock/Tag/CoversTagTest.php" />
    <install as="Horde/Refactor/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlock/Tag/DeprecatedTagTest.php" name="bundle/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlock/Tag/DeprecatedTagTest.php" />
    <install as="Horde/Refactor/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlock/Tag/ExampleTagTest.php" name="bundle/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlock/Tag/ExampleTagTest.php" />
@@ -322,32 +325,32 @@
    <install as="Horde/Refactor/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlock/Tag/UsesTagTest.php" name="bundle/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlock/Tag/UsesTagTest.php" />
    <install as="Horde/Refactor/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlock/Tag/VarTagTest.php" name="bundle/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlock/Tag/VarTagTest.php" />
    <install as="Horde/Refactor/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlock/Tag/VersionTagTest.php" name="bundle/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlock/Tag/VersionTagTest.php" />
+   <install as="Horde/Refactor/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlock/TagTest.php" name="bundle/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlock/TagTest.php" />
    <install as="Horde/Refactor/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlock/Type/CollectionTest.php" name="bundle/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlock/Type/CollectionTest.php" />
+   <install as="Horde/Refactor/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlockTest.php" name="bundle/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlockTest.php" />
    <install as="LICENSE" name="doc/Horde/Refactor/LICENSE" />
    <install as="Horde/Refactor/Cli.php" name="lib/Horde/Refactor/Cli.php" />
    <install as="Horde/Refactor/Config.php" name="lib/Horde/Refactor/Config.php" />
-   <install as="Horde/Refactor/Exception.php" name="lib/Horde/Refactor/Exception.php" />
-   <install as="Horde/Refactor/Regexp.php" name="lib/Horde/Refactor/Regexp.php" />
-   <install as="Horde/Refactor/Rule.php" name="lib/Horde/Refactor/Rule.php" />
-   <install as="Horde/Refactor/TagFactory.php" name="lib/Horde/Refactor/TagFactory.php" />
-   <install as="Horde/Refactor/Tokens.php" name="lib/Horde/Refactor/Tokens.php" />
-   <install as="Horde/Refactor/Translation.php" name="lib/Horde/Refactor/Translation.php" />
    <install as="Horde/Refactor/Config/Base.php" name="lib/Horde/Refactor/Config/Base.php" />
    <install as="Horde/Refactor/Config/FileLevelDocBlock.php" name="lib/Horde/Refactor/Config/FileLevelDocBlock.php" />
+   <install as="Horde/Refactor/Exception.php" name="lib/Horde/Refactor/Exception.php" />
    <install as="Horde/Refactor/Exception/NotFound.php" name="lib/Horde/Refactor/Exception/NotFound.php" />
    <install as="Horde/Refactor/Exception/StopProcessing.php" name="lib/Horde/Refactor/Exception/StopProcessing.php" />
    <install as="Horde/Refactor/Exception/UnexpectedToken.php" name="lib/Horde/Refactor/Exception/UnexpectedToken.php" />
+   <install as="Horde/Refactor/Regexp.php" name="lib/Horde/Refactor/Regexp.php" />
+   <install as="Horde/Refactor/Rule.php" name="lib/Horde/Refactor/Rule.php" />
    <install as="Horde/Refactor/Rule/FileLevelDocBlock.php" name="lib/Horde/Refactor/Rule/FileLevelDocBlock.php" />
    <install as="Horde/Refactor/Rule/Php4Constructor.php" name="lib/Horde/Refactor/Rule/Php4Constructor.php" />
-   <install as="locale/Horde_Refactor.pot" name="locale/Horde_Refactor.pot" />
+   <install as="Horde/Refactor/TagFactory.php" name="lib/Horde/Refactor/TagFactory.php" />
+   <install as="Horde/Refactor/Tokens.php" name="lib/Horde/Refactor/Tokens.php" />
+   <install as="Horde/Refactor/Translation.php" name="lib/Horde/Refactor/Translation.php" />
+   <install as="locale/de/LC_MESSAGES/Horde_Refactor.mo" name="locale/de/LC_MESSAGES/Horde_Refactor.mo" />
    <install as="locale/de/LC_MESSAGES/Horde_Refactor.po" name="locale/de/LC_MESSAGES/Horde_Refactor.po" />
+   <install as="locale/Horde_Refactor.pot" name="locale/Horde_Refactor.pot" />
    <install as="Horde/Refactor/AllTests.php" name="test/Horde/Refactor/AllTests.php" />
    <install as="Horde/Refactor/bootstrap.php" name="test/Horde/Refactor/bootstrap.php" />
    <install as="Horde/Refactor/ConfigTest.php" name="test/Horde/Refactor/ConfigTest.php" />
    <install as="Horde/Refactor/FileLevelDocBlockTest.php" name="test/Horde/Refactor/FileLevelDocBlockTest.php" />
-   <install as="Horde/Refactor/Php4ConstructorTest.php" name="test/Horde/Refactor/Php4ConstructorTest.php" />
-   <install as="Horde/Refactor/phpunit.xml" name="test/Horde/Refactor/phpunit.xml" />
-   <install as="Horde/Refactor/TokensTest.php" name="test/Horde/Refactor/TokensTest.php" />
    <install as="Horde/Refactor/fixtures/config.php" name="test/Horde/Refactor/fixtures/config.php" />
    <install as="Horde/Refactor/fixtures/FileLevelDocBlock/ClassLevelDocBlock.php" name="test/Horde/Refactor/fixtures/FileLevelDocBlock/ClassLevelDocBlock.php" />
    <install as="Horde/Refactor/fixtures/FileLevelDocBlock/ClassLevelDocBlockWithFileLevelDocs.php" name="test/Horde/Refactor/fixtures/FileLevelDocBlock/ClassLevelDocBlockWithFileLevelDocs.php" />
@@ -363,8 +366,6 @@
    <install as="Horde/Refactor/fixtures/FileLevelDocBlock/MissingLinebreak.php" name="test/Horde/Refactor/fixtures/FileLevelDocBlock/MissingLinebreak.php" />
    <install as="Horde/Refactor/fixtures/FileLevelDocBlock/NoFileLevelDocBlock.php" name="test/Horde/Refactor/fixtures/FileLevelDocBlock/NoFileLevelDocBlock.php" />
    <install as="Horde/Refactor/fixtures/FileLevelDocBlock/OtherCopyright.php" name="test/Horde/Refactor/fixtures/FileLevelDocBlock/OtherCopyright.php" />
-   <install as="Horde/Refactor/fixtures/FileLevelDocBlock/RemoveForbiddenTags.php" name="test/Horde/Refactor/fixtures/FileLevelDocBlock/RemoveForbiddenTags.php" />
-   <install as="Horde/Refactor/fixtures/FileLevelDocBlock/RemoveStripText.php" name="test/Horde/Refactor/fixtures/FileLevelDocBlock/RemoveStripText.php" />
    <install as="Horde/Refactor/fixtures/FileLevelDocBlock/refactored/ClassLevelDocBlock.php" name="test/Horde/Refactor/fixtures/FileLevelDocBlock/refactored/ClassLevelDocBlock.php" />
    <install as="Horde/Refactor/fixtures/FileLevelDocBlock/refactored/ClassLevelDocBlockWithFileLevelDocs.php" name="test/Horde/Refactor/fixtures/FileLevelDocBlock/refactored/ClassLevelDocBlockWithFileLevelDocs.php" />
    <install as="Horde/Refactor/fixtures/FileLevelDocBlock/refactored/ClassLevelDocsInFileLevel.php" name="test/Horde/Refactor/fixtures/FileLevelDocBlock/refactored/ClassLevelDocsInFileLevel.php" />
@@ -377,13 +378,18 @@
    <install as="Horde/Refactor/fixtures/FileLevelDocBlock/refactored/OtherCopyright.php" name="test/Horde/Refactor/fixtures/FileLevelDocBlock/refactored/OtherCopyright.php" />
    <install as="Horde/Refactor/fixtures/FileLevelDocBlock/refactored/RemoveForbiddenTags.php" name="test/Horde/Refactor/fixtures/FileLevelDocBlock/refactored/RemoveForbiddenTags.php" />
    <install as="Horde/Refactor/fixtures/FileLevelDocBlock/refactored/RemoveStripText.php" name="test/Horde/Refactor/fixtures/FileLevelDocBlock/refactored/RemoveStripText.php" />
+   <install as="Horde/Refactor/fixtures/FileLevelDocBlock/RemoveForbiddenTags.php" name="test/Horde/Refactor/fixtures/FileLevelDocBlock/RemoveForbiddenTags.php" />
+   <install as="Horde/Refactor/fixtures/FileLevelDocBlock/RemoveStripText.php" name="test/Horde/Refactor/fixtures/FileLevelDocBlock/RemoveStripText.php" />
    <install as="Horde/Refactor/fixtures/Php4Constructor/Php4ConstructorOnly.php" name="test/Horde/Refactor/fixtures/Php4Constructor/Php4ConstructorOnly.php" />
    <install as="Horde/Refactor/fixtures/Php4Constructor/Php5Constructor.php" name="test/Horde/Refactor/fixtures/Php4Constructor/Php5Constructor.php" />
-   <install as="Horde/Refactor/fixtures/Php4Constructor/WrongConstructorOrder.php" name="test/Horde/Refactor/fixtures/Php4Constructor/WrongConstructorOrder.php" />
    <install as="Horde/Refactor/fixtures/Php4Constructor/refactored/Php4ConstructorOnly.php" name="test/Horde/Refactor/fixtures/Php4Constructor/refactored/Php4ConstructorOnly.php" />
    <install as="Horde/Refactor/fixtures/Php4Constructor/refactored/Php5Constructor.php" name="test/Horde/Refactor/fixtures/Php4Constructor/refactored/Php5Constructor.php" />
    <install as="Horde/Refactor/fixtures/Php4Constructor/refactored/WrongConstructorOrder.php" name="test/Horde/Refactor/fixtures/Php4Constructor/refactored/WrongConstructorOrder.php" />
-   </filelist>
+   <install as="Horde/Refactor/fixtures/Php4Constructor/WrongConstructorOrder.php" name="test/Horde/Refactor/fixtures/Php4Constructor/WrongConstructorOrder.php" />
+   <install as="Horde/Refactor/Php4ConstructorTest.php" name="test/Horde/Refactor/Php4ConstructorTest.php" />
+   <install as="Horde/Refactor/phpunit.xml" name="test/Horde/Refactor/phpunit.xml" />
+   <install as="Horde/Refactor/TokensTest.php" name="test/Horde/Refactor/TokensTest.php" />
+  </filelist>
  </phprelease>
  <changelog>
   <release>
@@ -395,7 +401,7 @@
     <release>alpha</release>
     <api>alpha</api>
    </stability>
-   <date>2017-05-05</date>
+   <date>2017-10-17</date>
    <license uri="http://www.horde.org/licenses/bsd">BSD</license>
    <notes>
 * Initial release.
