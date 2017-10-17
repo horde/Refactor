@@ -64,7 +64,7 @@ did not receive this file, see %licenseUrl%.';
      *
      * @var string
      */
-    public $fileDescriptionRegexp = '/See the enclosed file (LICENSE|COPYING) for license information \((GPL|LGPL(-2\.1)?|BSD|ASL)\)\. If you( |\n)did( |\n)not receive this file, see https?:\/\/www\.horde\.org\/licenses\/(gpl|lgpl(21)?|bsd|apache)\./';
+    public $fileDescriptionRegexp = '/See the enclosed file LICENSE for license information \((GPL|LGPL(-2\.1)?|BSD|ASL)\)\. If you( |\n)did( |\n)not receive this file, see https?:\/\/www\.horde\.org\/licenses\/(gpl|lgpl(21)?|bsd|apache)\./';
 
     /**
      * Regular expression to extract description for file-level DocBlocks, if
@@ -190,7 +190,7 @@ did not receive this file, see %licenseUrl%.';
      *
      * @var string
      */
-    public $licenseExtractRegexp = '/See the enclosed file (?:LICENSE|COPYING) for license information \((GPL|LGPL(?:-2\.1)?|BSD|ASL)\)\. If you(?: |\n)did(?: |\n)not receive this file, see https?:\/\/www\.horde\.org\/licenses\/(?:gpl|lgpl(?:21)?|bsd|apache)\./';
+    public $licenseExtractRegexp = '/See the enclosed file LICENSE for license information \((GPL|LGPL(?:-2\.1)?|BSD|ASL)\)\. If you(?: |\n)did(?: |\n)not receive this file, see https?:\/\/www\.horde\.org\/licenses\/(?:gpl|lgpl(?:21)?|bsd|apache)\./';
 
     /**
      * Default license URL for new, empty DocBlocks.
@@ -204,7 +204,7 @@ did not receive this file, see %licenseUrl%.';
      *
      * @var string
      */
-    public $licenseUrlExtractRegexp = '/See the enclosed file (?:LICENSE|COPYING) for license information \((?:GPL|LGPL(?:-2\.1)?|BSD|ASL)\)\. If you(?: |\n)did(?: |\n)not receive this file, see (https?:\/\/www\.horde\.org\/licenses\/(?:gpl|lgpl(?:21)?|bsd|apache))\./';
+    public $licenseUrlExtractRegexp = '/See the enclosed file LICENSE for license information \((?:GPL|LGPL(?:-2\.1)?|BSD|ASL)\)\. If you(?: |\n)did(?: |\n)not receive this file, see (https?:\/\/www\.horde\.org\/licenses\/(?:gpl|lgpl(?:21)?|bsd|apache))\./';
 
     /**
      * Default copyright year for new, empty DocBlocks.
