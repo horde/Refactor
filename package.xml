@@ -10,7 +10,7 @@
   <email>jan@horde.org</email>
   <active>yes</active>
  </lead>
- <date>2017-10-17</date>
+ <date>2017-10-20</date>
  <version>
   <release>1.0.0alpha1</release>
   <api>1.0.0alpha1</api>
@@ -214,7 +214,6 @@
       <file name="ConfigTest.php" role="test" />
       <file name="FileLevelDocBlockTest.php" role="test" />
       <file name="Php4ConstructorTest.php" role="test" />
-      <file name="phpunit.xml" role="test" />
       <file name="TokensTest.php" role="test" />
      </dir> <!-- /test/Horde/Refactor -->
     </dir> <!-- /test/Horde -->
@@ -381,7 +380,6 @@
    <install as="Horde/Refactor/fixtures/Php4Constructor/refactored/WrongConstructorOrder.php" name="test/Horde/Refactor/fixtures/Php4Constructor/refactored/WrongConstructorOrder.php" />
    <install as="Horde/Refactor/fixtures/Php4Constructor/WrongConstructorOrder.php" name="test/Horde/Refactor/fixtures/Php4Constructor/WrongConstructorOrder.php" />
    <install as="Horde/Refactor/Php4ConstructorTest.php" name="test/Horde/Refactor/Php4ConstructorTest.php" />
-   <install as="Horde/Refactor/phpunit.xml" name="test/Horde/Refactor/phpunit.xml" />
    <install as="Horde/Refactor/TokensTest.php" name="test/Horde/Refactor/TokensTest.php" />
   </filelist>
  </phprelease>
@@ -395,7 +393,7 @@
     <release>alpha</release>
     <api>alpha</api>
    </stability>
-   <date>2017-10-17</date>
+   <date>2017-10-20</date>
    <license uri="http://www.horde.org/licenses/bsd">BSD</license>
    <notes>
 * Initial release.
