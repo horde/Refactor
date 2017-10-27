@@ -10,7 +10,7 @@
   <email>jan@horde.org</email>
   <active>yes</active>
  </lead>
- <date>2017-10-20</date>
+ <date>2017-10-27</date>
  <version>
   <release>1.0.0alpha1</release>
   <api>1.0.0alpha1</api>
@@ -123,6 +123,13 @@
      <file name="autoload.php" role="php" />
     </dir> <!-- /bundle/vendor -->
    </dir> <!-- /bundle -->
+   <dir name="doc">
+    <dir name="Horde">
+     <dir name="Refactor">
+      <file name="CHANGES" role="doc" />
+     </dir> <!-- /doc/Horde/Refactor -->
+    </dir> <!-- /doc/Horde -->
+   </dir> <!-- /doc -->
    <dir name="lib">
     <dir name="Horde">
      <dir name="Refactor">
@@ -321,6 +328,7 @@
    <install as="Horde/Refactor/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlock/TagTest.php" name="bundle/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlock/TagTest.php" />
    <install as="Horde/Refactor/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlock/Type/CollectionTest.php" name="bundle/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlock/Type/CollectionTest.php" />
    <install as="Horde/Refactor/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlockTest.php" name="bundle/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlockTest.php" />
+   <install as="CHANGES" name="doc/Horde/Refactor/CHANGES" />
    <install as="Horde/Refactor/Cli.php" name="lib/Horde/Refactor/Cli.php" />
    <install as="Horde/Refactor/Config.php" name="lib/Horde/Refactor/Config.php" />
    <install as="Horde/Refactor/Config/Base.php" name="lib/Horde/Refactor/Config/Base.php" />
@@ -393,7 +401,7 @@
     <release>alpha</release>
     <api>alpha</api>
    </stability>
-   <date>2017-10-20</date>
+   <date>2017-10-27</date>
    <license uri="http://www.horde.org/licenses/bsd">BSD</license>
    <notes>
 * Initial release.
