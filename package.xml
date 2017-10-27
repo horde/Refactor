@@ -10,7 +10,7 @@
   <email>jan@horde.org</email>
   <active>yes</active>
  </lead>
- <date>2017-05-05</date>
+ <date>2017-10-27</date>
  <version>
   <release>1.0.0alpha1</release>
   <api>1.0.0alpha1</api>
@@ -113,6 +113,8 @@
         </dir> <!-- /bundle/vendor/phpdocumentor/reflection-docblock/tests -->
        <file name=".gitignore" role="php" />
        <file name=".travis.yml" role="php" />
+       <file name="composer.json" role="php" />
+       <file name="composer.lock" role="php" />
        <file name="LICENSE" role="php" />
        <file name="phpunit.xml.dist" role="php" />
        <file name="README.md" role="php" />
@@ -160,6 +162,7 @@
    <dir name="locale">
     <dir name="de">
      <dir name="LC_MESSAGES">
+      <file name="Horde_Refactor.mo" role="data" />
       <file name="Horde_Refactor.po" role="data" />
      </dir> <!-- /locale/de/LC_MESSAGES -->
     </dir> <!-- /locale/de -->
@@ -277,6 +280,8 @@
    <install as="Horde/Refactor/vendor/composer/LICENSE" name="bundle/vendor/composer/LICENSE" />
    <install as="Horde/Refactor/vendor/phpdocumentor/reflection-docblock/.gitignore" name="bundle/vendor/phpdocumentor/reflection-docblock/.gitignore" />
    <install as="Horde/Refactor/vendor/phpdocumentor/reflection-docblock/.travis.yml" name="bundle/vendor/phpdocumentor/reflection-docblock/.travis.yml" />
+   <install as="Horde/Refactor/vendor/phpdocumentor/reflection-docblock/composer.json" name="bundle/vendor/phpdocumentor/reflection-docblock/composer.json" />
+   <install as="Horde/Refactor/vendor/phpdocumentor/reflection-docblock/composer.lock" name="bundle/vendor/phpdocumentor/reflection-docblock/composer.lock" />
    <install as="Horde/Refactor/vendor/phpdocumentor/reflection-docblock/LICENSE" name="bundle/vendor/phpdocumentor/reflection-docblock/LICENSE" />
    <install as="Horde/Refactor/vendor/phpdocumentor/reflection-docblock/phpunit.xml.dist" name="bundle/vendor/phpdocumentor/reflection-docblock/phpunit.xml.dist" />
    <install as="Horde/Refactor/vendor/phpdocumentor/reflection-docblock/README.md" name="bundle/vendor/phpdocumentor/reflection-docblock/README.md" />
@@ -340,6 +345,7 @@
    <install as="Horde/Refactor/Rule/FileLevelDocBlock.php" name="lib/Horde/Refactor/Rule/FileLevelDocBlock.php" />
    <install as="Horde/Refactor/Rule/Php4Constructor.php" name="lib/Horde/Refactor/Rule/Php4Constructor.php" />
    <install as="locale/Horde_Refactor.pot" name="locale/Horde_Refactor.pot" />
+   <install as="locale/de/LC_MESSAGES/Horde_Refactor.mo" name="locale/de/LC_MESSAGES/Horde_Refactor.mo" />
    <install as="locale/de/LC_MESSAGES/Horde_Refactor.po" name="locale/de/LC_MESSAGES/Horde_Refactor.po" />
    <install as="Horde/Refactor/AllTests.php" name="test/Horde/Refactor/AllTests.php" />
    <install as="Horde/Refactor/bootstrap.php" name="test/Horde/Refactor/bootstrap.php" />
@@ -395,7 +401,7 @@
     <release>alpha</release>
     <api>alpha</api>
    </stability>
-   <date>2017-05-05</date>
+   <date>2017-10-27</date>
    <license uri="http://www.horde.org/licenses/bsd">BSD</license>
    <notes>
 * Initial release.
