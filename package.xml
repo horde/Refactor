@@ -222,7 +222,6 @@
       <file name="ConfigTest.php" role="test" />
       <file name="FileLevelDocBlockTest.php" role="test" />
       <file name="Php4ConstructorTest.php" role="test" />
-      <file name="phpunit.xml" role="test" />
       <file name="TokensTest.php" role="test" />
      </dir> <!-- /test/Horde/Refactor -->
     </dir> <!-- /test/Horde -->
@@ -354,7 +353,6 @@
    <install as="Horde/Refactor/ConfigTest.php" name="test/Horde/Refactor/ConfigTest.php" />
    <install as="Horde/Refactor/FileLevelDocBlockTest.php" name="test/Horde/Refactor/FileLevelDocBlockTest.php" />
    <install as="Horde/Refactor/Php4ConstructorTest.php" name="test/Horde/Refactor/Php4ConstructorTest.php" />
-   <install as="Horde/Refactor/phpunit.xml" name="test/Horde/Refactor/phpunit.xml" />
    <install as="Horde/Refactor/TokensTest.php" name="test/Horde/Refactor/TokensTest.php" />
    <install as="Horde/Refactor/fixtures/config.php" name="test/Horde/Refactor/fixtures/config.php" />
    <install as="Horde/Refactor/fixtures/FileLevelDocBlock/ClassLevelDocBlock.php" name="test/Horde/Refactor/fixtures/FileLevelDocBlock/ClassLevelDocBlock.php" />
