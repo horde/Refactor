@@ -13,8 +13,6 @@
 
 namespace Horde\Refactor;
 
-use Horde\Refactor\Config;
-
 /**
  * Refactoring configuration.
  *
