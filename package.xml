@@ -3,14 +3,14 @@
  <name>Horde_Refactor</name>
  <channel>pear.horde.org</channel>
  <summary>PHP code refactoring library</summary>
- <description>An extendable set of classes and a command line tool to refactor files or complete directories.</description>
+ <description>An extendable library and command line tool to refactor files or complete directories.</description>
  <lead>
   <name>Jan Schneider</name>
   <user>jan</user>
   <email>jan@horde.org</email>
   <active>yes</active>
  </lead>
- <date>2017-11-11</date>
+ <date>2021-07-04</date>
  <version>
   <release>1.0.0alpha1</release>
   <api>1.0.0alpha1</api>
@@ -130,35 +130,6 @@
      </dir> <!-- /doc/Horde/Refactor -->
     </dir> <!-- /doc/Horde -->
    </dir> <!-- /doc -->
-   <dir name="lib">
-    <dir name="Horde">
-     <dir name="Refactor">
-      <dir name="Config">
-       <file name="Base.php" role="php" />
-       <file name="FileLevelDocBlock.php" role="php" />
-      </dir> <!-- /lib/Horde/Refactor/Config -->
-      <dir name="Exception">
-       <file name="NotFound.php" role="php" />
-       <file name="StopProcessing.php" role="php" />
-       <file name="UnexpectedToken.php" role="php" />
-      </dir> <!-- /lib/Horde/Refactor/Exception -->
-      <dir name="Rule">
-       <file name="FileLevelDocBlock.php" role="php" />
-       <file name="Php4Constructor.php" role="php" />
-      </dir> <!-- /lib/Horde/Refactor/Rule -->
-      <file name="Cli.php" role="php" />
-      <file name="Config.php" role="php" />
-      <file name="Exception.php" role="php" />
-      <file name="Regexp.php" role="php" />
-      <file name="Rule.php" role="php" />
-      <file name="TagFactory.php" role="php" />
-      <file name="Tokens.php" role="php" />
-      <file name="Translation.php" role="php">
-       <tasks:replace from="@data_dir@" to="data_dir" type="pear-config" />
-      </file>
-     </dir> <!-- /lib/Horde/Refactor -->
-    </dir> <!-- /lib/Horde -->
-   </dir> <!-- /lib -->
    <dir name="locale">
     <dir name="de">
      <dir name="LC_MESSAGES">
@@ -168,6 +139,31 @@
     </dir> <!-- /locale/de -->
     <file name="Horde_Refactor.pot" role="data" />
    </dir> <!-- /locale -->
+   <dir name="src">
+    <dir name="Config">
+     <file name="Base.php" role="php" />
+     <file name="FileLevelDocBlock.php" role="php" />
+    </dir> <!-- /src/Config -->
+    <dir name="Exception">
+     <file name="NotFound.php" role="php" />
+     <file name="StopProcessing.php" role="php" />
+     <file name="UnexpectedToken.php" role="php" />
+    </dir> <!-- /src/Exception -->
+    <dir name="Rule">
+     <file name="FileLevelDocBlock.php" role="php" />
+     <file name="Php4Constructor.php" role="php" />
+    </dir> <!-- /src/Rule -->
+    <file name="Cli.php" role="php" />
+    <file name="Config.php" role="php" />
+    <file name="Exception.php" role="php" />
+    <file name="Regexp.php" role="php" />
+    <file name="Rule.php" role="php" />
+    <file name="TagFactory.php" role="php" />
+    <file name="Tokens.php" role="php" />
+    <file name="Translation.php" role="php">
+     <tasks:replace from="@data_dir@" to="data_dir" type="pear-config" />
+    </file>
+   </dir> <!-- /src -->
    <dir name="test">
     <dir name="Horde">
      <dir name="Refactor">
@@ -231,38 +227,38 @@
  <dependencies>
   <required>
    <php>
-    <min>5.5.0</min>
+    <min>7.0.0</min>
    </php>
    <pearinstaller>
     <min>1.7.0</min>
    </pearinstaller>
    <package>
-    <name>Horde_Cli</name>
-    <channel>pear.horde.org</channel>
-    <min>2.1.0</min>
-    <max>3.0.0alpha1</max>
-    <exclude>3.0.0alpha1</exclude>
+    <name>cli</name>
+    <channel>horde</channel>
+    <min>3.0.0</min>
+    <max>4.0.0alpha1</max>
+    <exclude>4.0.0alpha1</exclude>
    </package>
    <package>
-    <name>Horde_Exception</name>
-    <channel>pear.horde.org</channel>
-    <min>2.0.0</min>
-    <max>3.0.0alpha1</max>
-    <exclude>3.0.0alpha1</exclude>
+    <name>exception</name>
+    <channel>horde</channel>
+    <min>3.0.0</min>
+    <max>4.0.0alpha1</max>
+    <exclude>4.0.0alpha1</exclude>
    </package>
    <package>
-    <name>Horde_Text_Diff</name>
-    <channel>pear.horde.org</channel>
-    <min>2.2.0</min>
-    <max>3.0.0alpha1</max>
-    <exclude>3.0.0alpha1</exclude>
+    <name>text_diff</name>
+    <channel>horde</channel>
+    <min>3.0.0</min>
+    <max>4.0.0alpha1</max>
+    <exclude>4.0.0alpha1</exclude>
    </package>
    <package>
-    <name>Horde_Translation</name>
-    <channel>pear.horde.org</channel>
-    <min>2.2.2</min>
-    <max>3.0.0alpha1</max>
-    <exclude>3.0.0alpha1</exclude>
+    <name>translation</name>
+    <channel>horde</channel>
+    <min>3.0.0</min>
+    <max>4.0.0alpha1</max>
+    <exclude>4.0.0alpha1</exclude>
    </package>
   </required>
  </dependencies>
@@ -329,25 +325,25 @@
    <install as="Horde/Refactor/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlock/Type/CollectionTest.php" name="bundle/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlock/Type/CollectionTest.php" />
    <install as="Horde/Refactor/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlockTest.php" name="bundle/vendor/phpdocumentor/reflection-docblock/tests/phpDocumentor/Reflection/DocBlockTest.php" />
    <install as="CHANGES" name="doc/Horde/Refactor/CHANGES" />
-   <install as="Horde/Refactor/Cli.php" name="lib/Horde/Refactor/Cli.php" />
-   <install as="Horde/Refactor/Config.php" name="lib/Horde/Refactor/Config.php" />
-   <install as="Horde/Refactor/Config/Base.php" name="lib/Horde/Refactor/Config/Base.php" />
-   <install as="Horde/Refactor/Config/FileLevelDocBlock.php" name="lib/Horde/Refactor/Config/FileLevelDocBlock.php" />
-   <install as="Horde/Refactor/Exception.php" name="lib/Horde/Refactor/Exception.php" />
-   <install as="Horde/Refactor/Exception/NotFound.php" name="lib/Horde/Refactor/Exception/NotFound.php" />
-   <install as="Horde/Refactor/Exception/StopProcessing.php" name="lib/Horde/Refactor/Exception/StopProcessing.php" />
-   <install as="Horde/Refactor/Exception/UnexpectedToken.php" name="lib/Horde/Refactor/Exception/UnexpectedToken.php" />
-   <install as="Horde/Refactor/Regexp.php" name="lib/Horde/Refactor/Regexp.php" />
-   <install as="Horde/Refactor/Rule.php" name="lib/Horde/Refactor/Rule.php" />
-   <install as="Horde/Refactor/Rule/FileLevelDocBlock.php" name="lib/Horde/Refactor/Rule/FileLevelDocBlock.php" />
-   <install as="Horde/Refactor/Rule/Php4Constructor.php" name="lib/Horde/Refactor/Rule/Php4Constructor.php" />
-   <install as="Horde/Refactor/TagFactory.php" name="lib/Horde/Refactor/TagFactory.php" />
-   <install as="Horde/Refactor/Tokens.php" name="lib/Horde/Refactor/Tokens.php" />
-   <install as="Horde/Refactor/Translation.php" name="lib/Horde/Refactor/Translation.php" />
    <install as="LICENSE" name="LICENSE" />
    <install as="locale/de/LC_MESSAGES/Horde_Refactor.mo" name="locale/de/LC_MESSAGES/Horde_Refactor.mo" />
    <install as="locale/de/LC_MESSAGES/Horde_Refactor.po" name="locale/de/LC_MESSAGES/Horde_Refactor.po" />
    <install as="locale/Horde_Refactor.pot" name="locale/Horde_Refactor.pot" />
+   <install as="Cli.php" name="src/Cli.php" />
+   <install as="Config.php" name="src/Config.php" />
+   <install as="Config/Base.php" name="src/Config/Base.php" />
+   <install as="Config/FileLevelDocBlock.php" name="src/Config/FileLevelDocBlock.php" />
+   <install as="Exception.php" name="src/Exception.php" />
+   <install as="Exception/NotFound.php" name="src/Exception/NotFound.php" />
+   <install as="Exception/StopProcessing.php" name="src/Exception/StopProcessing.php" />
+   <install as="Exception/UnexpectedToken.php" name="src/Exception/UnexpectedToken.php" />
+   <install as="Regexp.php" name="src/Regexp.php" />
+   <install as="Rule.php" name="src/Rule.php" />
+   <install as="Rule/FileLevelDocBlock.php" name="src/Rule/FileLevelDocBlock.php" />
+   <install as="Rule/Php4Constructor.php" name="src/Rule/Php4Constructor.php" />
+   <install as="TagFactory.php" name="src/TagFactory.php" />
+   <install as="Tokens.php" name="src/Tokens.php" />
+   <install as="Translation.php" name="src/Translation.php" />
    <install as="Horde/Refactor/AllTests.php" name="test/Horde/Refactor/AllTests.php" />
    <install as="Horde/Refactor/bootstrap.php" name="test/Horde/Refactor/bootstrap.php" />
    <install as="Horde/Refactor/ConfigTest.php" name="test/Horde/Refactor/ConfigTest.php" />
@@ -401,7 +397,7 @@
     <release>alpha</release>
     <api>alpha</api>
    </stability>
-   <date>2017-11-11</date>
+   <date>2017-10-20</date>
    <license uri="http://www.horde.org/licenses/bsd">BSD</license>
    <notes>
 * Initial release.

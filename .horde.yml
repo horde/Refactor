@@ -3,8 +3,8 @@ id: Refactor
 name: Refactor
 full: PHP code refactoring library
 description: >-
-  An extendable library and command line tool to refactor files or
-  complete directories.
+  An extendable library and command line tool to refactor files or complete
+  directories.
 list: dev
 type: library
 authors:
