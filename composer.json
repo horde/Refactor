@@ -17,18 +17,14 @@
         {
             "type": "composer",
             "url": "https://horde-satis.maintaina.com/"
-        },
-        {
-            "url": "https://horde",
-            "type": "pear"
         }
     ],
     "require": {
-        "php": "^7",
-        "pear-horde/cli": "^3",
-        "pear-horde/exception": "^3",
-        "pear-horde/text_diff": "^3",
-        "pear-horde/translation": "^3"
+        "php": "^7.4 || ^8",
+        "horde/cli": "^3",
+        "horde/exception": "^3",
+        "horde/text_diff": "^3",
+        "horde/translation": "^3"
     },
     "require-dev": {},
     "suggest": {},
